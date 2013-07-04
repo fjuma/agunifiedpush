@@ -7,8 +7,8 @@ esac
 
 # Create additional directories required by JBOSSAS
 mkdir -p ${OPENSHIFT_HOMEDIR}/.m2
-mkdir -p ${OPENSHIFT_AGUNIFIEDPUSH}/{template,standalone/tmp,standalone/deployments,standalone/configuration,standalone/log,standalone/data}
+mkdir -p ${OPENSHIFT_AGUNIFIEDPUSH_DIR}/{template,standalone/tmp,standalone/deployments,standalone/configuration,standalone/log,standalone/data}
 
 # Copy the version specific files up to jbossas directory
-cp -r ${OPENSHIFT_AGUNIFIEDPUSH}/versions/${version}/standalone/configuration/* ${OPENSHIFT_AGUNIFIEDPUSH}/standalone/configuration
-cp ${OPENSHIFT_AGUNIFIEDPUSH}/versions/${version}/bin/* ${OPENSHIFT_AGUNIFIEDPUSH}/bin
+cp -r ${OPENSHIFT_AGUNIFIEDPUSH_DIR}/versions/${version}/standalone/configuration/* ${OPENSHIFT_AGUNIFIEDPUSH_DIR}/standalone/configuration
+cp ${OPENSHIFT_AGUNIFIEDPUSH_DIR}/versions/${version}/bin/* ${OPENSHIFT_AGUNIFIEDPUSH_DIR}/bin
